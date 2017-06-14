@@ -22,11 +22,11 @@ public class MyTask implements Runnable{
 }
 ```
 
-```
+
 public static void main(String[] args) {
 	MyTask task = new MyTask();
 	for(int i = 0;i<5;i++){
 		new Thread(task,"窗口"+(i+1)).start();
 	}
 }
-```
+
